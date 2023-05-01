@@ -1,0 +1,99 @@
+/*ブラウザがそれぞれに持っているCSSをリセットするための記述*/
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+header{
+  height:50px;
+  width:100%;
+  background-color:#FF9A4B;
+}
+
+main{
+  width:960px;
+  display:flex;
+  margin:0 auto;
+}
+
+.main-box{
+  width:300px;
+  background-color:#EEEEEE;
+  padding:10px;
+  position: relative;
+  margin:50px 0;
+}
+
+.main-box:nth-child(1){
+  margin-right:30px;
+}
+.main-box:nth-child(2){
+  margin-right:30px;
+}
+
+.step1{
+  height:150px;
+  background-image:url(img/flow01.png);
+  background-size:cover;
+  background-position:bottom;
+}
+
+.step2{
+  height:150px;
+  background-image:url(img/flow02.png);
+  background-size:cover;
+  background-position:bottom;
+}
+.step3{
+  height:150px;
+  background-image:url(img/flow03.png);
+  background-size:cover;
+  background-position:bottom;
+}
+
+
+.step-span{
+  color:white;
+  background-color:#ff9a4b;
+  position:relative;
+  top:-10px;
+  left:-10px;
+}
+
+.main-text h3{
+  margin:15px 0 5px 0;
+}
+
+
+footer{
+  height:50px;
+  width:100%;
+  background-color:#AAAAAA;
+}
+
+@media screen and (max-width:768px){
+  header{
+    width:100%;
+  }
+  main{
+    width:100%;
+    display:block;
+    margin:50px 0;
+  }
+
+  .main-box{
+    width:90%;
+    margin:0 auto;
+  }
+
+  .main-box:nth-child(1){
+    margin-right:5%;
+    margin-bottom:20px;
+  }
+
+  .main-box:nth-child(2){
+    margin-right:5%;
+    margin-bottom:20px;
+  }
+}
